@@ -65,4 +65,16 @@ func main(){
 
 	fmt.Println(introduce)
 
+	// konstanta
+	const firstName string  = "Aris"
+
+	fmt.Print("halo ", firstName, "! \n")
+
+	fmt.Println("aris danang")
+	fmt.Println("aris","danang")
+
+	fmt.Print("aris danang\n")
+	fmt.Print("aris ","danang\n")
+	fmt.Print("aris", " ", "danang\n")
+
 }
