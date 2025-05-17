@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main(){
 	// var nama string = "danang"
@@ -98,4 +100,16 @@ func main(){
 	const three, four, five string = "tiga", "empat", "lima"
 
 	fmt.Println(satu,dua,three,four,five)
+
+	// conditional statement
+	var trafficLight = "green"
+
+	if trafficLight == "red" {
+		fmt.Println("berhenti")
+	} else if trafficLight == "yellow" {
+		fmt.Println("bersiap siap")
+	} else {
+		fmt.Println("jalan!!!")
+	}
+
 }
