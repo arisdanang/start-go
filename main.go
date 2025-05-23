@@ -17,40 +17,6 @@ func main(){
 	// fmt.Printf("%s %s %s \n", keempat, kelima, keenam)
 
 
-	// konstanta
-	const firstName string  = "Aris"
-
-	fmt.Print("halo ", firstName, "! \n")
-
-	fmt.Println("aris danang")
-	fmt.Println("aris","danang")
-
-	fmt.Print("aris danang\n")
-	fmt.Print("aris ","danang\n")
-	fmt.Print("aris", " ", "danang\n")
-
-	// deklarasi multi konstanta
-	const (
-		square = "persegi"
-		isExist bool = true
-		numeric uint8 = 23
-		floatNum = 2.3
-	)
-
-	fmt.Println(square,isExist,numeric, floatNum)
-
-	const (
-		a = "testing"
-		b
-	)
-
-	fmt.Println(a,b)
-
-	const satu, dua = 1, 2
-	const three, four, five string = "tiga", "empat", "lima"
-
-	fmt.Println(satu,dua,three,four,five)
-
 	// conditional statement
 	var trafficLight = "green"
 
