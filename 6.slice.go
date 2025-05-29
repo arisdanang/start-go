@@ -28,6 +28,16 @@ func main(){
 	// get length of slice
 	fmt.Println(len(animals))
 
+	fmt.Println("-------------")
+
+
+	// append new element
+	var cAnimals = append(animals, "fish")
+	fmt.Println(animals)
+	fmt.Println(cAnimals)
+
+	fmt.Println("-------------")
+
 
 
 
