@@ -43,4 +43,25 @@ func main(){
 		fmt.Println("item not exists")
 	}
 
+	// combine slice and map
+	var cats = []map[string]string {
+		map[string]string{"name": "larry","gender": "male"},
+		map[string]string{"name": "candy","gender": "female"},
+	}
+
+	for _, cat := range cats {
+		fmt.Println(cat["name"], cat["gender"])
+	}
+
+	// *other ways to combine slice and map
+	// var cats = []map[string]string {
+	// 	{"name": "larry","gender": "male"},
+	// 	{"name": "candy","gender": "female"},
+	// }
+
+	// we can add item with different keys
+	var data = []map[string]string{
+		{"name": "John", "age": "21"},
+		{"job": "software engineer", "status": "single"},
+	}
 }
