@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main(){
-	for i := 0; i < 5; i++{
+func main() {
+	for i := 0; i < 5; i++ {
 		fmt.Println("angka", i)
 	}
 
@@ -20,15 +20,14 @@ func main(){
 
 	// for loop tanpa argumen
 
-
 	var b = 0
 
-	for{
+	for {
 		fmt.Println("angka", b)
 
 		b++
 
-		if(b == 5){
+		if b == 5 {
 			break
 		}
 	}
@@ -46,24 +45,22 @@ func main(){
 	var xs = "123"
 
 	for i, v := range xs {
-		fmt.Println("index= ",i,"value= ",v)
+		fmt.Println("index= ", i, "value= ", v)
 	}
-
 
 	fmt.Println("---------------")
 
 	// penggunaan keyword break dan continue
 
 	for i := 1; i <= 10; i++ {
-		fmt.Println("luar ",i)
-		if i % 2 == 1 {
-		fmt.Println("asdf ",i)
+		fmt.Println("luar ", i)
+		if i%2 == 1 {
+			fmt.Println("asdf ", i)
 
 			continue
 		}
 
 		fmt.Println(i)
-
 
 		if i > 8 {
 			break
@@ -71,15 +68,13 @@ func main(){
 
 		fmt.Println("angka", i)
 
-
 	}
 
 	fmt.Println("---------------")
 
-
 	// perulangan bersarang
-	for i:=0; i < 5; i++{
-		for j:= i; j < 5; j++{
+	for i := 0; i < 5; i++ {
+		for j := i; j < 5; j++ {
 			fmt.Print(j, " ")
 		}
 

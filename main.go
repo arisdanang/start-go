@@ -4,18 +4,16 @@ import (
 	"fmt"
 )
 
-func main(){
+func main() {
 	// declare var with new keyword
 	// name := new(string)
 
 	// fmt.Println(*name)
 
-
 	// fmt.Println("Hello world", "icik bos")
 	// fmt.Printf("hello %s %s %s \n", nama, status, job)
 	// fmt.Printf("%s %s %s \n", pertama, kedua, ketiga)
 	// fmt.Printf("%s %s %s \n", keempat, kelima, keenam)
-
 
 	// conditional statement
 	var trafficLight = "green"
@@ -27,7 +25,6 @@ func main(){
 	} else {
 		fmt.Println("jalan!!!")
 	}
-
 
 	// temp variable inside conditional statements
 	var point = 1777.3
@@ -46,19 +43,20 @@ func main(){
 	switch score {
 	case 8:
 		fmt.Println("perfect")
-	case 7,6,5,4:
+	case 7, 6, 5, 4:
 		fmt.Println("awesome")
-	default: {
-		fmt.Println("not bad")
-		fmt.Println("you can be better")
-	}
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you can be better")
+		}
 	}
 
 	// switch case dengan gaya if-else
-	var age uint8 = 17;
+	var age uint8 = 17
 
 	switch {
-	case age >= 17 :
+	case age >= 17:
 		fmt.Println("dewasa")
 		fallthrough // keyword yg unik dan membingungkan hehehehe
 	case age < 17:
@@ -68,6 +66,5 @@ func main(){
 	default:
 		fmt.Println("batita")
 	}
-
 
 }

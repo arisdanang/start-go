@@ -2,19 +2,18 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	// horizontal style
 	var days = map[string]int{"senin": 10, "selasa": 20, "rabu": 30}
 
 	// vertikal
 	var days2 = map[string]int{
-		"senin": 12,
+		"senin":  12,
 		"selasa": 14,
-		"rabu": 16,
-		"kamis": 18,
+		"rabu":   16,
+		"kamis":  18,
 	}
-
 
 	fmt.Println("senin", days["senin"])
 	fmt.Println("selasa", days2["selasa"])
@@ -23,7 +22,6 @@ func main(){
 	// var days3 = map[string]int{}
 	// var day4 = make(map[string]int)
 	// var days5 = *new(map[string]int)
-
 
 	// looping with for...range
 	for key, val := range days2 {
@@ -44,9 +42,9 @@ func main(){
 	}
 
 	// combine slice and map
-	var cats = []map[string]string {
-		map[string]string{"name": "larry","gender": "male"},
-		map[string]string{"name": "candy","gender": "female"},
+	var cats = []map[string]string{
+		map[string]string{"name": "larry", "gender": "male"},
+		map[string]string{"name": "candy", "gender": "female"},
 	}
 
 	for _, cat := range cats {

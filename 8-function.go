@@ -7,24 +7,24 @@ import (
 	"time"
 )
 
-func main()  {
+func main() {
 	var names = []string{"danang", "wahyu"}
 	greetHello("hallo", names)
 
 	var randomValue int
 
-	randomValue = randomWithRange(2,10)
+	randomValue = randomWithRange(2, 10)
 	fmt.Println("random", randomValue)
 
-	randomValue = randomWithRange(2,10)
+	randomValue = randomWithRange(2, 10)
 	fmt.Println("random", randomValue)
 
-	randomValue = randomWithRange(2,10)
+	randomValue = randomWithRange(2, 10)
 	fmt.Println("random", randomValue)
 
 }
 
-func greetHello(message string, arr []string){
+func greetHello(message string, arr []string) {
 	var name = strings.Join(arr, " ")
 	fmt.Println(message, name)
 }

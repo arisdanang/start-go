@@ -2,14 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// tipe data - numerik non desimal
 	var positifNum uint8 = 70
 	var negativeNum = -1234523
 
 	fmt.Printf("bilangan positif: %d\n", positifNum)
 	fmt.Printf("bilangan negatif: %d\n", negativeNum)
-
 
 	// tipe data - numerik desimal
 	var decimalNum = 3.14

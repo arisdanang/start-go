@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// init slice
-	var animals = []string{"dog","bird","cat","horse"}
+	var animals = []string{"dog", "bird", "cat", "horse"}
 	fmt.Println(animals[2])
 
 	fmt.Println("-------------")
@@ -40,8 +40,8 @@ func main(){
 	fmt.Println("-------------")
 
 	dst := make([]string, 3)
-	src := []string{"bird","dog","fish","lion"}
-	n := copy(dst,src)
+	src := []string{"bird", "dog", "fish", "lion"}
+	n := copy(dst, src)
 
 	fmt.Println(dst)
 	fmt.Println(src)
@@ -49,9 +49,8 @@ func main(){
 
 	fmt.Println("-------------")
 
-
 	// access slice using 3 indexes
-	var people = []string{"Budi","Agung","Irwan"}
+	var people = []string{"Budi", "Agung", "Irwan"}
 	var aPeople = people[0:2]
 	var bPeople = people[0:2:2]
 
@@ -63,11 +62,8 @@ func main(){
 	fmt.Println(len(aPeople))
 	fmt.Println(cap(aPeople))
 
-
 	fmt.Println(bPeople)
 	fmt.Println(len(bPeople))
 	fmt.Println(cap(bPeople))
-
-
 
 }
