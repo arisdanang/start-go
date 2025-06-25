@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	var getMinMax = func(n []int) (int, int) {
@@ -49,6 +52,22 @@ func main() {
 	fmt.Println("data: \t", howMany)
 	fmt.Println("value: \t", getNumbers())
 
+	fmt.Println("------------")
+
+	names := []string{"Danang", "joko", "abdi"}
+
+	namesStartWithD := filter(names, func(s string) bool {
+		return strings.Contains(s, "D")
+	})
+
+	namesLength4 := filter(names, func(s string) bool {
+		return len(s) == 4
+	})
+
+	fmt.Println("data asli \t\t:", names)
+	fmt.Println("nama dengan awal huruf D \t\t:", namesStartWithD)
+	fmt.Println("nama dengan panjang 4 \t\t:", namesLength4)
+
 }
 
 func findMax(numbers []int, max int) (int, func() []int) {
@@ -62,4 +81,18 @@ func findMax(numbers []int, max int) (int, func() []int) {
 	return len(res), func() []int {
 		return res
 	}
+}
+
+type FilterCallback func(string) bool
+
+// contoh penggunaan fungsi sebagai parameter
+func filter(data []string, callback FilterCallback) []string {
+	var result []string
+	for _, each := range data {
+		if filtered := callback(each); filtered {
+			result = append(result, each)
+		}
+	}
+
+	return result
 }
